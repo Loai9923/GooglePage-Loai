@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - GooglePage</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/GooglePage.styles.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid navDicorational">
+            <div class="navbar bg-body-tertiary"  id="navbarSupportedContent">
+            <a  href="#">
+                <img class="profImage" src="Images\Profile.jpg" alt="Alternate Text" />
+                <div class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <img class="graidPic" src="Images\graid.png" alt="Alternate Text" />
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="#">Images</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="https://mail.google.com/mail/u/0/">Gmail</a>
+                </div> 
+            </a>
+           
+          
+            </div>
+        </div>
+    </nav>
+
+
+    @RenderBody()
+
+    @await RenderSectionAsync("Scripts", required: false);
+
+ 
+ 
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted footer">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom Sect" style="border-bottom: 0.5px solid #00000059 !important;">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Jordan</span>
+            </div>
+            
+        </section>
+     
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom Sect">
+            <!-- Left -->
+            <div class=" d-none d-lg-block" style="direction:ltr">
+                <span><a class="a1" href="https://about.google/?utm_source=google-JO&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></span>
+                <span><a class="a1" href="https://ads.google.com/intl/en_jo/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Adversting</a></span>
+                <span><a class="a1" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Bussnis</a></span>
+                <span><a class="a1" href="https://www.google.com/search/howsearchworks/?fg=1">How search work</a></span>
+            </div>
+            <div class="d-none d-lg-block" style="direction:rtl">
+                <span><a class="a2" href="https://policies.google.com/privacy?hl=en-JO&fg=1">Privacy</a></span>
+                <span><a class="a2" href="https://policies.google.com/terms?hl=en-JO&fg=1">Terms</a></span>
+                <span><a class="a2" href="https://www.google.com/preferences?hl=en-JO&fg=1">Setting</a></span>
+
+            </div>
+        </section>
+
+
+    </footer>
+    <!-- Footer -->
+    
+</body>
+
+</html>

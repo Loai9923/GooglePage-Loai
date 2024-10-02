@@ -1,0 +1,201 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.roboto-thin {
+    font-family: "Roboto", system-ui;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: Arial, sans-serif;
+}
+
+.profImage {
+    border-radius: 111px;
+    width: 34px;
+}
+
+.graidPic {
+    border-radius: 0px;
+    padding-bottom: 2px;
+    width: 18px;
+}
+
+
+div a[b-2otl28rdo1] {
+    color: black;
+}
+
+
+.nav-item {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.nav-link {
+    padding: 0.3rem 1rem
+}
+
+#GooglePic {
+    width: 250px;
+}
+
+.navbarContant {
+    display: -webkit-inline-box;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.navDicorational {
+    direction: rtl;
+}
+/*
+    search bar
+*/
+.btnSrch {
+    background-color: white;
+    color: black;
+    border-left: 0;
+    border-color: #80808054;
+    border-radius: 0px 17px 17px 0px;
+}
+
+.leftSide {
+    border: 1px solid black;
+    border-right: 0px;
+    border-color: #80808054;
+    border-radius: 17px 0px 0px 17px;
+    padding: 9px;
+}
+
+.searchArea {
+    border-left: 0
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0, 0 0 0 0 !important;
+}
+
+.input-group > .form-control:focus, .input-group > .form-select:focus {
+    z-index: 0 !important;
+}
+
+.form-control:focus {
+    border-color: #80808054;
+}
+
+.searchIcon {
+    padding: 4px;
+    cursor: pointer
+}
+
+    .searchIcon:hover {
+        color: blue
+    }
+
+/*
+    end of search bar
+*/
+
+/*
+button down of search bar
+*/
+
+.btn1 {
+    direction: rtl;
+}
+
+.btnAll {
+    background-color: #f8f9fa !important;
+    border: 1px solid #f8f9fa;
+    font-size: 15px;
+}
+
+    .btnAll:hover {
+        box-shadow: 0px 0px 7px 1px #00000026;
+    }
+
+div a {
+    font-size: 13px;
+
+}
+
+#Line {
+    color: #155ec9ed !important;
+    font-weight: 550 !important;
+}
+
+    #Line:hover {
+        text-decoration: underline !important;
+        cursor: pointer
+    }
+
+
+/*
+    down texxt
+*/
+
+.TxtDown {
+    font-size: 13px;
+    text-align: center;
+
+}
+.Sect {
+    background-color: #dadce052 !important;
+   
+    padding: 0 !important;
+    color: black;
+    padding-left: 15px !important;
+    font-size: 15px
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+   
+}
+
+ .a1 {
+    padding-right: 23px;
+}
+ .a2 {
+    padding-left: 23px;
+}
+    span a:hover {
+        text-decoration: underline !important;
+        cursor: pointer
+    }
+
