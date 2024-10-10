@@ -37,7 +37,7 @@ html {
 
 body {
     margin-bottom: 60px;
-    font-family: Arial, sans-serif;
+   
 }
 
 .profImage {
@@ -61,9 +61,13 @@ div a[b-2otl28rdo1] {
     font-weight: bold;
     font-size: 15px;
 }
+.navbar {
+    justify-content: normal;
+}
 
 .nav-link {
-    padding: 0.3rem 1rem
+    padding: 0.3rem 1rem;
+    color: black
 }
 
 #GooglePic {
@@ -78,9 +82,10 @@ a:link {
     text-decoration: none;
 }
 
-.navDicorational {
+.navDicoritional{
     direction: rtl;
 }
+
 /*
     search bar
 */
@@ -147,8 +152,9 @@ button down of search bar
         box-shadow: 0px 0px 7px 1px #00000026;
     }
 
-div a {
+div a{
     font-size: 13px;
+    color:black
 
 }
 
@@ -174,11 +180,11 @@ div a {
 }
 .Sect {
     background-color: #dadce052 !important;
-   
     padding: 0 !important;
     color: black;
     padding-left: 15px !important;
-    font-size: 15px
+    font-size: 15px;
+    border-bottom: 0.5px solid #00000059 !important
 }
 .footer {
     position: fixed;
@@ -199,3 +205,64 @@ div a {
         cursor: pointer
     }
 
+ /**Search Page*/
+
+/******/
+
+/*Nav Bar*/
+
+
+/******/
+.NavContent {
+    padding: 16px;
+}
+.BrandSearchCol {
+    padding-top: 10px;
+}
+.BrandSearch {
+   
+    width: 100%;
+}
+/******/
+
+/**line under the Search*/
+.LineBetween {
+    padding-top: 30px;
+    border-bottom: solid #80808042 .5px;
+    padding-bottom:30px
+}
+.row {
+    width: 100%
+}
+.borderLeft {
+    border-left: solid #80808042 .5px
+}
+.pad {
+    padding-top: 59px;
+    
+}
+.Contant:hover {
+    text-decoration: underline !important;
+    color: #99c3ff !important;
+}
+.Contant {
+    cursor: pointer;
+    color: #99c3ff;
+    font-family: sans-serif !important;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/*footer Search*/
+.FooterSpan {
+    border-left: solid black 1px;
+    padding-left: 34px;
+    font-weight: 600;
+    color: black;
+
+}
+hr {
+    margin-top: 0px !important;
+}
+/**End of Search Page*/
+/******/

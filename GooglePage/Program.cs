@@ -1,3 +1,8 @@
+using Core.Dtos;
+using Core.Entites;
+using Core.Interfaces;
+using GoogleWebService.GoogleServices;
+
 namespace GooglePage
 {
     public class Program
@@ -5,7 +10,7 @@ namespace GooglePage
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
+        
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
