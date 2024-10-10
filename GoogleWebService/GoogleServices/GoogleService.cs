@@ -141,11 +141,12 @@ namespace GoogleWebService.GoogleServices
                 {
                     return Allpost;
                 }
-                else 
+                else if (title.Title == null)
                 {
                     return null;
                 }
-            
+                else
+                    return null;
             }
             catch 
             {

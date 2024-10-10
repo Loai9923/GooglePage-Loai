@@ -8,8 +8,27 @@
 <!--------Nav Bar Start------------------>
 <nav class="navbar bg-body-tertiary NavContent">
     <div class="container-fluid ">
-        <div class="row" style="width:100%">
-            <div class="col-1 BrandSearchCol"><a href="~/">
+        <div class="row" style="width:100% ; direction: rtl;">
+            <div class="col-5  navDicoritional">
+                <div class="navbar bg-body-tertiary" id="navbarSupportedContent">
+                    <a href="#">
+                        <img class="profImage" src="~/Images/Profile.jpg" alt="Alternate Text" />
+                        <div class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <img class="graidPic" src="~/Images/graid.png" alt="Alternate Text" />
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="#">Images</a>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="https://mail.google.com/mail/u/0/">Gmail</a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-1 BrandSearchCol" style="justify-content: left;">
+                <a href="~/">
                     <img class="BrandSearch" src="~/Images/Google2.png" alt="Google Brand" />
                 </a>
             </div>
@@ -18,9 +37,10 @@
                 <!--  Search Bar -->
                 <!----------------->
 
+
                 <div class="row justify-content-center">
 
-                    <div class="col-md-6" style="width:100%!important">
+                    <div class="col-6 col-sm" style="direction: ltr;width:100%!important">
                         <form method="post" asp-controller="Home" asp-action="Search">
 
                             <div class="input-group mb-3">
@@ -39,24 +59,7 @@
                 <!----------------->
                 <!----------------->
             </div>
-            <div class="col-5 navDicoritional">
-                <div class="navbar bg-body-tertiary" id="navbarSupportedContent">
-                    <a href="#">
-                        <img class="profImage" src="~/Images/Profile.jpg" alt="Alternate Text" />
-                        <div class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
-                                <img class="graidPic" src="~/Images/graid.png" alt="Alternate Text" />
-                            </a>
-                        </div>
-                        <div class="nav-item">
-                            <a class="nav-link" href="#">Images</a>
-                        </div>
-                        <div class="nav-item">
-                            <a class="nav-link" href="https://mail.google.com/mail/u/0/">Gmail</a>
-                        </div>
-                    </a>
-                </div>
-            </div>
+         
         </div>
     </div>
 </nav>
@@ -70,30 +73,34 @@
 <div class="LineBetween">
 </div>
 <div class="container pad">
-
-    <div class="row">
-        <div class="col-9">
-            @if (Model.Count > 0)
-            {  @foreach (var item in Model)
-                {
-                    <h3> <a class="Contant">@item.Title  </a></h3>
-                    <p>@item.Contatns</p>
-                }
-            }
-            else
-            {
-                <h3>Model.Title</h3>
-                <p>Model.Contatns</p>
-
-            }
-
+    @if(Model.Count == 0 || @Model[0].Title == "Sorry")
+    {
+        <div class="row noResult">
+        <h3>@Model[0].Title</h3>
+        <p>@Model[0].Contatns</p>
         </div>
-        <div class="col-3 borderLeft">
+    }
+        else if (Model.Count != null)
+        {
+        <div class="row ">
+                <div class="col-9">
 
-            <h3>@Model[0].Title</h3>
-            <p>@Model[0].Contatns</p>
-        </div>
-    </div>
+                    @foreach (var item in Model)
+                    {
+                        <h3> <a class="Contant">@item.Title  </a></h3>
+                        <p>@item.Contatns</p>
+                    }
+
+
+
+                </div>
+                <div class="col-3 borderLeft">
+
+                    <h3>@Model[0].Title</h3>
+                    <p>@Model[0].Contatns</p>
+                </div>
+            </div>
+        }
 </div>
 <!-----------Content----------------->
 <!---------------------------------->
@@ -119,10 +126,8 @@
                     </a>
                 </span>
             </div>
-                <hr  /">
-          
-
-
+                <hr />
+ 
         
     </div>
 </footer>
