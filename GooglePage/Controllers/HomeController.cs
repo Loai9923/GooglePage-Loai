@@ -32,11 +32,12 @@ namespace GooglePage.Controllers
 
         {
             _title = searchingTitle;
-            if (_title == null)
+            
+            if (_title == null || searchingTitle.Title is null )
             {
                 _title = new PostedDto();
                 _title.Title = string.Empty;
-                return RedirectToAction("Result");
+                return RedirectToAction("Index");
             }
             else
                 return RedirectToAction("Result");
@@ -57,7 +58,7 @@ namespace GooglePage.Controllers
                 {
                     return View(resultRecived);
                 }
-                else
+                else 
                 {
                     Posted AddFake = new Posted() { Title = "Sorry", Contatns = "There is no Data to view it in this Title" };
                     List<Posted> ReplaceResult = new List<Posted>();
